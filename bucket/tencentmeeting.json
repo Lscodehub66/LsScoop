@@ -16,8 +16,5 @@
             "WeMeetApp.exe",
             "腾讯会议"
         ]
-    ],
-    "ext": {
-        "url": "https://meeting.tencent.com/download/"
-    }
+    ]
 }
