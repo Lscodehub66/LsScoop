@@ -19,16 +19,5 @@
     ],
     "ext": {
         "url": "https://meeting.tencent.com/download/"
-    },
-    "pre_install": [
-        "Rename-Item \"$dir\\`$_*_\" \"$dir\\$version\"",
-        "Remove-Item \"$dir\\`$*\", \"$dir\\wemeetapp_new.exe\" -Recurse -Force",
-        "startmenu_shortcut -target $(Get-Item \"$dir\\wemeetapp.exe\") -shortcutName \"Tencent Meeting\"",
-        "startmenu_shortcut -target $(Get-Item \"$dir\\wemeetapp.exe\") -shortcutName \"腾讯会议\""
-    ],
-    "pre_uninstall": [
-        "if (Get-Process -Name \"wemeetapp\" -Erroraction SilentlyContinue) {Stop-Process -Name \"wemeetapp\"}",
-        "if (Test-Path \"$(shortcut_folder)\\Tencent Meeting.lnk\") {Remove-Item \"$(shortcut_folder)\\Tencent Meeting.lnk\" -Force}",
-        "if (Test-Path \"$(shortcut_folder)\\腾讯会议.lnk\") {Remove-Item \"$(shortcut_folder)\\腾讯会议.lnk\" -Force}"
-    ]
+    }
 }
