@@ -5,7 +5,7 @@
     "homepage": "https://docs.qq.com",
     "license": "Freeware",
     "url": "https://desktop.docs.qq.com/Installer/30001/3.9.0/TencentDocs-x86_64.exe#/dl.7z",
-    "hash": "15ec3f3be3c36f1b418f9049079e0381631c757dad77b4d0d5f78c2cff874337",
+    "hash": "391abc658a5e3d8dbef8d68cf754e5f42df2c113b8f324ff714ed8a949425eaa",
     "architecture": {
         "64bit": {
             "pre_install": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\""
