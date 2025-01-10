@@ -14,7 +14,18 @@
             "pre_install": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\""
         }
     },
+    "pre_install": [
+        "Rename-Item \"$dir\\`$_*_\" \"$dir\\$version\"",
+        "Remove-Item \"$dir\\`$*\", \"$dir\\TencentDocs_new.exe\" -Recurse -Force",
+        "startmenu_shortcut -target $(Get-Item \"$dir\\TencentDocs.exe\") -shortcutName \"Tencent Docs\"",
+        "startmenu_shortcut -target $(Get-Item \"$dir\\TencentDocs.exe\") -shortcutName \"腾讯文档\""
+    ],
     "post_install": "Remove-Item \"$dir\\`$*\" -Force -Recurse",
+    "pre_uninstall": [
+        "if (Get-Process -Name \"TencentDocs\" -Erroraction SilentlyContinue) {Stop-Process -Name \"TencentDocs\"}",
+        "if (Test-Path \"$(shortcut_folder)Tencent Docs.lnk\") {Remove-Item \"$(shortcut_folder)Tencent Docs.lnk\" -Force}",
+        "if (Test-Path \"$(shortcut_folder)腾讯文档.lnk\") {Remove-Item \"$(shortcut_folder)腾讯文档.lnk\" -Force}"
+    ],
     "shortcuts": [
         [
             "TencentDocs.exe",
