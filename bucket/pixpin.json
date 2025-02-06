@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://download.pixpinapp.com/PixPin_1.9.11.8.zip",
-            "hash": "3501fa71d309595353df711a6e2ec3734ffb2b2f",
+            "hash": "sha1:3501fa71d309595353df711a6e2ec3734ffb2b2f",
             "extract_dir": "PixPin"
         }
     },
