@@ -1,6 +1,6 @@
 {
     "version": "1.9.11.8",
-    "description": "截图/贴图/长截图/文字识别/标注",
+    "description": "截图/贴图/文字识别/标注",
     "homepage": "https://pixpinapp.com/",
     "license": "Unlicense",
     "architecture": {

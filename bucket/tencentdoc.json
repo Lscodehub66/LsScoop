@@ -1,7 +1,7 @@
 {
     "##": "腾讯文档",
     "version": "3.9.6",
-    "description": "[腾讯文档] 支持多人在线编辑Word、Excel和PPT文档",
+    "description": "[腾讯文档] 支持多人在线编辑文档",
     "homepage": "https://docs.qq.com",
     "license": "Freeware",
     "url": "https://desktop.docs.qq.com/Installer/30001/3.9.6/TencentDocs-x86_64.exe#/dl.7z",
