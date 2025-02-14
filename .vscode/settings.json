@@ -24,5 +24,10 @@
         "**/.DS_Store": true,
         "**/tmp": true
     },
-    "files.trimTrailingWhitespace": true
+    "files.trimTrailingWhitespace": true,
+    "cursor.cmdk.useThemedDiffBackground": true,
+    "workbench.colorTheme": "PowerShell ISE",
+    "diffEditor.experimental.showMoves": true,
+    "diffEditor.experimental.collapseAllUnchangedRegions": true,
+    "diffEditor.experimental.useTrueInlineView": true
 }
