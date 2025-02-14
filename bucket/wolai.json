@@ -17,14 +17,12 @@
             ]
         }
     },
-
     "shortcuts": [
         [
             "wolai.exe",
             "wolai"
         ]
     ],
-   
     "checkver": {
         "url": "https://cdn.wostatic.cn/dist/installers/electron-versions.json",
         "regex": "Setup\\.(.+)\\.exe"
